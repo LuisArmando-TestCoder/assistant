@@ -1,0 +1,16 @@
+.btn {
+    cursor: pointer;
+    color: var(--white);
+    background: var(--black);
+    padding: 15px 60px;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.35s;
+    &:hover {
+        color: var(--black);
+        background: var(--white);
+    }
+}

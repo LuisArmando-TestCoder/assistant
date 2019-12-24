@@ -43,6 +43,6 @@ export default {
             'GhciBgYbA74&list=PLhxNyMmTLzoxuruCiW1gcYfLKVpY8OkQs'
         ];
         synthesis.talk('Ready to dance?');
-        window.open(`https://www.youtube.com/watch?v=${latinoSongs[props.random(salsaSongs.length - 1)]}`);
+        window.open(`https://www.youtube.com/watch?v=${latinoSongs[props.random(latinoSongs.length - 1)]}`);
     }
 };
