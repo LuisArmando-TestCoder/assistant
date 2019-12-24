@@ -8,8 +8,13 @@ export default {
     vintage() {
 
     },
-    sensual() {
-
+    sexual({synthesis, props}) {
+        const sexualSongs = [
+            'T7K0pZ9tGi4&list=RDT7K0pZ9tGi4',
+            '_DjE4gbIVZk&list=RD_DjE4gbIVZk'
+        ];
+        synthesis.talk('ok, let\'s get horny');
+        window.open(`https://www.youtube.com/watch?v=${sexualSongs[props.random(sexualSongs.length - 1)]}`);
     },
     cool({
         synthesis,

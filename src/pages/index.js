@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import preset from "canvas-preset"
-import command from "../commands/commander";
+import commander from "../commands/commander";
 import "../styles/index.scss";
 
 const IndexPage = () => {
@@ -13,7 +13,7 @@ const IndexPage = () => {
       setSay(() => () => {
         synthesis.listen(result => {
           setRecognitionResult(result);
-          command({result, synthesis, props});
+          commander({result, synthesis, props});
         });
       });
     });
