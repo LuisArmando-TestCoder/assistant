@@ -5,7 +5,7 @@ export default {
         synthesis.talk('Your experiments right sir');
         window.open('https://codepen.io/LuisArmando-TC/pens/public');
     },
-    classes({
+    courses({
         synthesis
     }) {
         synthesis.talk('Have fun learning');
