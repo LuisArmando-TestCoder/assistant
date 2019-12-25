@@ -10,6 +10,7 @@ export default {
     }) {
         synthesis.talk('Have fun learning');
         window.open('https://frontendmasters.com/courses');
+        window.open('https://app.dataquest.io/m/311/programming-in-python');
     },
     youtube({
         synthesis
