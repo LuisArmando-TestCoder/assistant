@@ -1,6 +1,8 @@
 import reproduce from './triggers/reproduce';
 import open from './triggers/open';
 
+const getAfterCommand = (result, param) => result.split(param)[1].trim();
+
 const commands = {
     open,
     reproduce,
@@ -8,7 +10,7 @@ const commands = {
         result,
         synthesis
     }) {
-        const searchResult = result.split('search')[1];
+        const searchResult = getAfterCommand(result, 'search');
         // maybe a bug where:
         // lala 3 times in: search lala search wow search what
         synthesis.talk(`ok, I am looking up for ${searchResult}`);
@@ -27,9 +29,17 @@ const commands = {
         result,
         synthesis
     }) {
-        const urlParam = result.replace(/find/, '').trim().split(' ').join('+');
+        const urlParam = getAfterCommand(result, 'find');
         synthesis.talk(`The place that your asking for is here`);
         window.open(`https://www.google.com/maps/place/${urlParam}`);
+    },
+    watch({
+        result,
+        synthesis
+    }) {
+        const urlParam = getAfterCommand(result, 'watch');
+        synthesis.talk(`Your about to witness some ${urlParam} videos`);
+        window.open(`https://www.youtube.com/results?search_query=${urlParam}`);
     }
 };
 
