@@ -5,6 +5,7 @@ import commandsObject from "../commands/controller";
 import "../styles/index.scss";
 
 const IndexPage = () => {
+  const undoCommand = 'nevermind';
   const [say, setSay] = useState(() => () => {});
   const [recognitionResult, setRecognitionResult] = useState('');
   const [availableCommands, setAvailableCommands] = useState(Object.keys(commandsObject));
@@ -29,6 +30,7 @@ const IndexPage = () => {
       <canvas className='hide'/>
       <p className='result-text'>{recognitionResult}</p>
       <button className='btn start-btn' onClick={say}>Start</button>
+      <p className='disclaimer-text'>The undo command is return</p>
     </section>
   )
 }

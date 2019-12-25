@@ -8,6 +8,7 @@ export default {
         props
     }) {
         chooseSongBetween([
+            'GOFiGClu0uk&list=RDGOFiGClu0uk',
             'PtpKYGmLpo0&list=RDPtpKYGmLpo0',
             'fdxxffPruDU&list=RDfdxxffPruDU',
             'vDn4tf0-CpI&list=RDvDn4tf0-CpI',
