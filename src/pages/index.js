@@ -5,7 +5,6 @@ import commandsObject from "../commands/controller";
 import "../styles/index.scss";
 
 const IndexPage = () => {
-  const undoCommand = 'nevermind';
   const [say, setSay] = useState(() => () => {});
   const [recognitionResult, setRecognitionResult] = useState('');
   const [availableCommands, setAvailableCommands] = useState(Object.keys(commandsObject));

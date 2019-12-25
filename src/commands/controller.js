@@ -26,7 +26,10 @@ const commands = {
     find({
         result,
         synthesis
-    }) { // place
+    }) {
+        const urlParam = result.replace(/find/, '').trim().split(' ').join('+');
+        synthesis.talk(`The place that your asking for is here`);
+        window.open(`https://www.google.com/maps/place/${urlParam}`);
     }
 };
 

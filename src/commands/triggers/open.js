@@ -46,5 +46,11 @@ export default {
     }) {
         synthesis.talk('Opening gmail');
         window.open('https://mail.google.com/mail/u/0/');
+    },
+    netlify({
+        synthesis
+    }) {
+        synthesis.talk('Ready to manage your proyects with Netlify');
+        window.open('https://app.netlify.com/');
     }
 }
