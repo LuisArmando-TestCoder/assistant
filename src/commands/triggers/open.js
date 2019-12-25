@@ -11,6 +11,8 @@ export default {
         synthesis.talk('Have fun learning');
         window.open('https://frontendmasters.com/courses');
         window.open('https://app.dataquest.io/m/311/programming-in-python');
+        window.open('https://courses.edx.org/dashboard#');
+        window.open('https://online-learning.harvard.edu/');
     },
     youtube({
         synthesis
