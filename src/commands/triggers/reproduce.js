@@ -65,6 +65,7 @@ export default {
         props
     }) {
         chooseSongBetween([
+            'WzVQxxwwoZ4&list=RDq4OB_BjZSqY',
             'S2T0TmT-ipU',
             'oJnF5VxTO5g',
             'm3YX8zlR4BU&list=RDm3YX8zlR4BU'
