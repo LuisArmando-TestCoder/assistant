@@ -8,6 +8,7 @@
 }
 
 .main-content > *:not(button) {
-    background: var(--white);
     padding: 25px 50px;
+    color: #fff;
+    font-family: sans-serif;
 }
