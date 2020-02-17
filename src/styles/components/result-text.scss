@@ -6,3 +6,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 25px #fff;
 }
+
+.result-text i:not(:first-of-type)::before {
+    content: " / ";
+}
