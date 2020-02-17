@@ -17,7 +17,7 @@ const IndexPage = () => {
         synthesis.listen(result => {
           setRecognitionResult(result);
           commander({result, synthesis, props, callback: commands => {
-            setAvailableCommands(Object.keys(commands));
+            setAvailableCommands({...commands});
           }});
         });
       });
@@ -27,7 +27,16 @@ const IndexPage = () => {
     <>
       <canvas className='canvas'/>
       <section className='main-content'>
-        <p className='result-text'>{availableCommands.join(' / ')}</p>
+        <p className='result-text'>
+          {
+            Object.keys(availableCommands).map(
+              key => <i title={
+                typeof availableCommands[key] === 'function' ?
+                  availableCommands[key] + '' : ''
+              }>{key}</i>
+            )
+          }
+        </p>
         <h1 className='main-title'>Alfred</h1>
         <p className='result-text'>{recognitionResult}</p>
         <button className='btn start-btn' onClick={say}>Start</button>
